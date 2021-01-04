@@ -122,6 +122,11 @@
 												  animation-name: fade;
 												  animation-duration: 1.5s;
 												}
+
+												.swipe{
+													overflow:auto;
+													white-space:nowrap;
+												}
 												
 												@-webkit-keyframes fade {
 												  from {opacity: .4} 
@@ -342,11 +347,11 @@
 												<script>
 												var slideIndex = [1,1,1,1,1];
 												var slideId = ["mySlides1", "mySlides2", "mySlides3", "mySlides4"]
-												showSlides(5, 0);
+												showSlides(0, 0);
 												showSlides(10, 1);
 												showSlides(5, 1);
 												showSlides(5, 2);
-												showSlides(5, 3);
+												showSlides(0, 3);
 												
 												function plusSlides(n, no) {
 												  showSlides(slideIndex[no] += n, no);
